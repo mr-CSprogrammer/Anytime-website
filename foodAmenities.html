@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="css/stylesFoodAmenities.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food/Snacks | Anytime - Esso</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONT -->
+
+
+            
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="topLink"></div>
+    
+
+    
+    <div class="navBar" >
+        <div class="logo"><img src="images/logo.PNG" alt=""></div>
+        <div class="statusTag"><p>24/7 Convenience Store</p></div>
+        <button class="hamburger">&#124;&#124;&#124;</button> 
+        <div class="navItems">
+            <a href="index.html">Back to Home</a>
+            <a href="#productsLink">Inventory</a>
+
+        </div>
+    </div>
+
+    <button class="topButton"><a class="topLinkText" href="#topLink">Top</a></button>
+
+    <div class="landingImg">
+        
+        <div class="landingInfo">
+            <h1>Food & Snacks</h1>
+            <p>Chips, Candy bars, smoothies, dairy products. </p>
+        </div>
+    </div>
+
+    <div class="websiteCredentials-background-top">
+    </div>
+
+
+    <div class="wave-top">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0 60 Q 150 120 300 60 Q 450 0 600 60 Q 750 120 900 60 Q 1050 0 1200 60 V0 H0 Z" fill="#ff8000"></path>
+        </svg>
+    </div>
+    
+    <div id="productsLink"></div>
+
+
+
+    <h1  class="productsHeader">Our Products</h1>
+    <div class="aboutUsSection">
+        <p>We offer a wide variety of products including chocolate bars, chips, ice cream, all types of drinks, slushies, coffee, and dairy products. It's your one-stop shop for all your snack and refreshment needs.</p>
+
+    </div>
+
+
+    
+    <div class="wave-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 10 Q 1050 120 900 60 Q 750 0 600 60 Q 450 120 300 60 Q 150 0 0 60 V120 H1200 Z" fill="#2d7fa2"></path>
+        </svg>
+    </div>
+    
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navItems = document.querySelector('.navItems');
+    
+            hamburger.addEventListener('click', function() {
+                navItems.classList.toggle('show');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const accordionItems = document.querySelectorAll('.accordion .item');
+
+        accordionItems.forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('clicked');
+            });
+        });
+    });
+
+
+
+        $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top
+            }, 500);
+            return false;
+        }
+        }
+    });
+    });
+
+    </script>
+    
+</body>
+</html>
+

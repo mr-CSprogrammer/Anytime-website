@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Anytime - Esso</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONT -->
+
+
+            
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="topLink"></div>
+    
+
+    
+    <div class="navBar" >
+        <div class="logo"><img src="images/logo.PNG" alt=""></div>
+        <div class="statusTag"><p>24/7 Convenience Store</p></div>
+        <button class="hamburger">&#124;&#124;&#124;</button> 
+        <div class="navItems">
+            <a href="#productsLink">Products</a>
+            <a href="#aboutLink">About Us</a>
+        </div>
+    </div>
+
+    <button class="topButton"><a class="topLinkText" href="#topLink">Top</a></button>
+
+    <div class="landingImg">
+        
+        <div class="landingInfo">
+            <h1>Welcome</h1>
+            <p>One stop shop</p>
+        </div>
+    </div>
+
+    <div class="websiteCredentials-background-top">
+    </div>
+
+
+    <div class="wave-top">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0 60 Q 150 120 300 60 Q 450 0 600 60 Q 750 120 900 60 Q 1050 0 1200 60 V0 H0 Z" fill="#ff8000"></path>
+        </svg>
+    </div>
+    
+    <div id="productsLink" ></div>
+
+
+
+    <h1  class="productsHeader">Products <span class="psst">Psst, click on each product to learn more</span></h1>
+
+    <div class="accordion">
+        <div class="item car-wash">
+          <div class="overlay">
+            <div class="overlay-content">
+                <h1>Car Wash</h1>
+                <p>State of the art, equipped with a powerful drying system to keep your vehicle shining and dry.</p>
+                <a href="carWash.html"><button class="learnMore">Learn More</button></a>
+            </div>  
+          </div>  
+        </div> 
+
+
+        <div class="item premium-gas">
+          <div class="overlay">
+            <div class="overlay-content">
+                <h1>Premium Esso Gas</h1>
+                <p>Fill up with our premium Esso gas, designed for efficiency and performance, keeping your engine running smoothly.</p>
+                <a href="essoGas.html"><button class="learnMore">Learn More</button></a>
+            </div>  
+          </div>  
+        </div> 
+
+
+        <div class="item food">
+          <div class="overlay">
+            <div class="overlay-content">
+                <h1>Food/Essentials</h1>
+                <p>Find snacks on the go like chips, candy, ice cream, plus groceries for your household needs.</p>
+                <a href="foodAmenities.html"><button class="learnMore">Learn More</button></a>
+            </div>  
+          </div>  
+        </div> 
+
+        
+        <div class="item uhaul">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h1>U-Haul Services</h1>
+                    <p>Effortless moving starts here—rent a U-Haul for your transport needs, available in various sizes to match your haul.</p>
+                    <a href="uHaul.html"><button class="learnMore">Learn More</button></a>
+                </div>  
+            </div>  
+        </div>
+        
+    </div>
+
+
+    <div id="aboutLink" class="infoSection">
+
+    
+    <h1  class="sectionHeader">About Us</h1>
+
+    <div class="aboutUsSection">
+        <p>Operating for over 10 years, Anytime Convenience is dedicated to bringing you outstanding customer service and a wide range of products. Our skilled staff are here to assist with your purchases, from food and cigarettes to lottery tickets. Our main goal is to serve you anytime you need us.</p>
+    </div>
+
+    <h1 class="sectionHeader">Contact Us</h1>
+    <div class="contactUsSection">
+        <p><strong>Address:</strong> 769 Southdale Rd E, London, ON N6E 3B9</p>
+        <p><strong>Phone:</strong> (519) 204-4994</p>
+    </div>
+
+</div>
+
+
+
+    <div class="wave-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 10 Q 1050 120 900 60 Q 750 0 600 60 Q 450 120 300 60 Q 150 0 0 60 V120 H1200 Z" fill="#2d7fa2"></path>
+        </svg>
+    </div>
+    
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navItems = document.querySelector('.navItems');
+    
+            hamburger.addEventListener('click', function() {
+                navItems.classList.toggle('show');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const accordionItems = document.querySelectorAll('.accordion .item');
+
+        accordionItems.forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('clicked');
+            });
+        });
+    });
+
+
+
+        $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top
+            }, 500);
+            return false;
+        }
+        }
+    });
+    });
+
+    </script>
+    
+</body>
+</html>
+
+
+
+<!-- Images:
+
+
+https://unsplash.com/photos/esso-gasoline-station-MODZ2X9rcAQ
+
+
+https://unsplash.com/photos/black-car-with-orange-light--uCp1YSCC-M
+
+
+https://www.pexels.com/photo/white-van-on-dirt-road-9115453/
+
+ -->
